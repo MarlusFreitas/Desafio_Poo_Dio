@@ -3,7 +3,7 @@ import java.time.LocalDate;
 import Conteúdo.Curso;
 import Conteúdo.Mentoria;
 
-public class Desafio_Poo_Dio {
+public class main {
 
     public static void main(String[] args) {
         Curso curso1 = new Curso();
@@ -17,7 +17,7 @@ public class Desafio_Poo_Dio {
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("Mentoria de Java");
-        mentoria.setdescricao("Descrição mentoria java");
+        mentoria.setDescricao("Descrição mentoria java");
         mentoria.setData(LocalDate.now());
 
         System.out.println(curso1);

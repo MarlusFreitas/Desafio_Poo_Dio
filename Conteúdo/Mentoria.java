@@ -2,22 +2,13 @@ package Conteúdo;
 
 import java.time.LocalDate;
 
-public class Mentoria {
-    private String titulo;
-    private String descricao;
+public class Mentoria extends Conteúdo {
+
     private LocalDate data;
 
-    public String getTitulo() {
-        return titulo;
-    }
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-    public String getdescricao() {
-        return descricao;
-    }
-    public void setdescricao(String descricao) {
-        this.descricao = descricao;
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO +  20.0;
     }
     public LocalDate getData() {
         return data;
@@ -27,7 +18,7 @@ public class Mentoria {
     }
     @Override
     public String toString() {
-        return "Mentoria [titulo=" + titulo + ", descrocap=" + descricao + ", data=" + data + "]";
+        return "Mentoria [titulo=" + getTitulo() + ", descrocap=" + getDescricao() + ", data=" + data + "]";
     }
     
 }

@@ -1,21 +1,12 @@
 package Conteúdo;
 
-public class Curso {
-    private String titulo;
-    private String descricao;
+public class Curso extends Conteúdo{
+
     private int cargaHoraria;
     
-    public String getTitulo() {
-        return titulo;
-    }
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-    public String getDescricao() {
-        return descricao;
-    }
-    public void setDescricao(String descrocap) {
-        this.descricao = descrocap;
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO * cargaHoraria;
     }
     public int getCargaHoraria() {
         return cargaHoraria;
@@ -25,7 +16,7 @@ public class Curso {
     }
     @Override
     public String toString() {
-        return "Curso [titulo=" + titulo + ", descrocap=" + descricao + ", cargaHoraria=" + cargaHoraria + "]";
+        return "Curso [titulo=" + getTitulo() + ", descrocap=" + getDescricao() + ", cargaHoraria=" + cargaHoraria + "]";
     }
 
     
